@@ -1,12 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <img alt="Angular Logo" width="80" height="40" src="../assets/nextonlabs-logo.png">
+      <button mat-button>
+        <a routerLink="/dashboard">Dashboard</a>
+      </button>
+      <button mat-button>
+        <a routerLink="/profile">Profile</a>
+      </button>
+      <button mat-button>
+        <a routerLink="/settings">Settings</a>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img alt="Angular Logo" src="../assets/nextonlabs-logo.png">
-  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
 </div>
+<router-outlet></router-outlet>
