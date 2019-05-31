@@ -11,9 +11,7 @@ import {
   MatToolbarModule
 } from '@angular/material';
 
-
 import {MatDividerModule} from '@angular/material/divider';
-
 
 @NgModule({
   declarations: [],

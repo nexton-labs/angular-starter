@@ -2,9 +2,11 @@
 <div style="text-align:center">
   <mat-toolbar>
     <mat-toolbar-row>
-      <img alt="Angular Logo" width="80" height="40" src="../assets/nextonlabs-logo.png">
       <button mat-button>
         <a routerLink="/dashboard">Dashboard</a>
+      </button>
+      <button mat-button>
+        <a routerLink="/users">Users</a>
       </button>
       <button mat-button>
         <a routerLink="/profile">Profile</a>
@@ -12,10 +14,11 @@
       <button mat-button>
         <a routerLink="/settings">Settings</a>
       </button>
+      <div style="margin-left: auto; margin-right: 0">
+        <img alt="Angular Logo" width="80" height="40" src="../assets/nextonlabs-logo.png">
+        <span>{{ title }}!</span>
+      </div>
     </mat-toolbar-row>
   </mat-toolbar>
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
 </div>
 <router-outlet></router-outlet>
