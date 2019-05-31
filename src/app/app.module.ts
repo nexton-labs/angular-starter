@@ -2,25 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
-import { SettingsComponent } from './settings/settings.component';
-import { ProfileComponent } from './profile/profile.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { NotFoundComponent } from './notFound/notFound.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NotFoundComponent } from './components/notFound/notFound.component';
 
-import {
-  MatButtonModule,
-  MatGridListModule,
-  MatInputModule,
-  MatMenuModule,
-  MatIconModule,
-  MatListModule,
-  MatToolbarModule
-} from '@angular/material';
+import { UsersComponent } from './components/users/users.component';
+import { UserDetailComponent } from './components/users/user-detail/user-detail.component';
 
-import {MatDividerModule} from '@angular/material/divider';
+import { CustomMaterialModule } from './modules/custom-material/custom-material.module';
 
 @NgModule({
   declarations: [
@@ -28,20 +22,16 @@ import {MatDividerModule} from '@angular/material/divider';
     SettingsComponent,
     ProfileComponent,
     DashboardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UsersComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
+    CustomMaterialModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatGridListModule,
-    MatInputModule,
-    MatMenuModule,
-    MatIconModule,
-    MatListModule,
-    MatToolbarModule,
-    MatDividerModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
