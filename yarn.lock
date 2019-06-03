@@ -309,6 +309,31 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@ngrx/core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/core/-/core-1.2.0.tgz#882b46abafa2e0e6d887cb71a1b2c2fa3e6d0dc6"
+  integrity sha1-iCtGq6+i4ObYh8txobLC+j5tDcY=
+
+"@ngrx/effects@^7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-7.4.0.tgz#7d1977538cf85e42ab48fd648acdfbc8b52f93d3"
+  integrity sha512-YjgB17WnLCBDPjAkHduKWsLFSGLZryPaTjY3EIvMF+WTRPDlgC5SAv2n7p3YIei6g6IYcEvOwLWBqZHFUXTgBw==
+
+"@ngrx/router-store@^7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-7.4.0.tgz#69c085bda3022117169f87ed5753b951de7d376d"
+  integrity sha512-ZpwTO1/ha3pxO7NV3jIfnwipBN1A719IjAOgrcmI8Ut06VH3HY/7JVFTkwLN/FyuHvl4EOlAVYmMAblmrymUWA==
+
+"@ngrx/store-devtools@^7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-7.4.0.tgz#5a73469c70322351c4224f4529c5123f587a5997"
+  integrity sha512-ZmPpquprBYUozbLuLMLZzUhI+LnMNGMNg8x1ij9yDxXWQADcJm1Zu7kouYE1r5SoCYxKfwJ3Ia1VQfS3A5S8dw==
+
+"@ngrx/store@^7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-7.4.0.tgz#525a343aa45d7f6ca60f3301a23a27669c14bbce"
+  integrity sha512-kwTUHgfgBeAL4RQBjZO46z9v4Xzg8PXAgY4WwXdt3zUk1tF4ZvijMleFvFRUoiJJfxF/UM6jgIZ/yGrX2dXQuA==
+
 "@ngtools/webpack@8.0.0":
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-8.0.0.tgz#1a842f14b80f5430358374d0150659cb029a0198"
