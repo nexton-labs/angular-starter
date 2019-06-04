@@ -16,15 +16,17 @@ import { UserEffects } from './store/effects/user.effects';
 
 import { environment } from './config/environment';
 
+import { UserService } from './services/user.service';
+
 import { AppComponent } from './app.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NotFoundComponent } from './components/notFound/notFound.component';
 import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './components/users/user/user.component';
 import { UserDetailComponent } from './components/users/user-detail/user-detail.component';
-
-
+import { UserListComponent } from './components/users/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { UserDetailComponent } from './components/users/user-detail/user-detail.
     DashboardComponent,
     NotFoundComponent,
     UsersComponent,
+    UserComponent,
+    UserListComponent,
     UserDetailComponent
   ],
   imports: [
@@ -47,7 +51,7 @@ import { UserDetailComponent } from './components/users/user-detail/user-detail.
     CustomMaterialModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
