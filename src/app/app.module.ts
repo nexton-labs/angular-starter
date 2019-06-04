@@ -23,8 +23,10 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NotFoundComponent } from './components/notFound/notFound.component';
-import { UsersComponent } from './components/users/users.component';
-import { UserComponent } from './components/users/user/user.component';
+
+import { UsersComponent } from './containers/users/users/users.component';
+import { UserComponent } from './containers/users/user/user.component';
+
 import { UserDetailComponent } from './components/users/user-detail/user-detail.component';
 import { UserListComponent } from './components/users/user-list/user-list.component';
 

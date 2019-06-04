@@ -3,12 +3,17 @@
   <tr>
     <th scope="col">#</th>
     <th scope="col">Name</th>
+    <th scope="col">Card Number</th>
+    <th scope="col">Card Type</th>
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let user of users">
+  <tr *ngFor="let user of users"
+      (click)="handleSelectUser(user.id)">
     <td>{{ user.id }}</td>
     <td>{{ user.name }}</td>
+    <td>{{ user.cardNumber }}</td>
+    <td>{{ user.cardType }}</td>
   </tr>
   </tbody>
 </table>
