@@ -14,6 +14,13 @@ export const userReducers = (
       };
     }
 
+    case USER_ACTIONS.GET_USER_SUCCESS: {
+      return {
+        ...state,
+        selectedUser: action.payload
+      };
+    }
+
     default:
       return state;
   }
