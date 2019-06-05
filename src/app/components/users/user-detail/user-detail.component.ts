@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { IUser } from '../../../models/user.interface';
+import { IUser } from '@app/models/user.interface';
 
 @Component({
   selector: 'app-user-detail',

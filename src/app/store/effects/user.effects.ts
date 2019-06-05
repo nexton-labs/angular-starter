@@ -12,8 +12,8 @@ import {
   GetUserSuccess,
   USER_ACTIONS
 } from '../actions/user.actions';
-import { UserService } from '../../services/user.service';
-import { IUserHttp } from '../../models/user-http.interface';
+import { UserService } from '@app/services/user.service';
+import { IUserHttp } from '@app/models/user-http.interface';
 import { selectUserList } from '../selectors/user.selector';
 
 @Injectable()

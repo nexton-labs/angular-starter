@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
 
-import { GetUsers } from '../../../store/actions/user.actions';
+import { GetUsers } from '@app/store/actions/user.actions';
 
-import { IAppState } from '../../../store/state/app.state';
-import { selectUserList } from '../../../store/selectors/user.selector';
+import { IAppState } from '@app/store/state/app.state';
+import { selectUserList } from '@app/store/selectors/user.selector';
 
 @Component({
   selector: 'app-users',

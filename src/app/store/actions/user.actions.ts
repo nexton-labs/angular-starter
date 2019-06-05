@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { IUser } from '../../models/user.interface';
+import { IUser } from '@app/models/user.interface';
 
 export enum USER_ACTIONS {
   GET_USERS = 'GET_USERS',
