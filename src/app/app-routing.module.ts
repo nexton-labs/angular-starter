@@ -9,6 +9,13 @@ import { NotFoundComponent } from './components/notFound/notFound.component';
 import { UsersComponent } from './containers/users/users/users.component';
 import { UserComponent } from './containers/users/user/user.component';
 
+/*
+  {
+    path: 'customers',
+    loadChildren: () => import('./customers/customers.module').then(mod => mod.CustomersModule)
+  },
+* */
+
 const routes: Routes = [
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
@@ -16,6 +23,9 @@ const routes: Routes = [
   { path: 'user/:id', component: UserComponent },
   {path: 'profile', component: ProfileComponent},
   {path: 'settings', component: SettingsComponent},
+  {path: 'configurations',
+    loadChildren: () => import('./modules/configurations/configurations.module').then(mod => mod.ConfigurationsModule)
+  },
   {path: '404', component: NotFoundComponent},
   {path: '**', redirectTo: '/404'}
 ];
