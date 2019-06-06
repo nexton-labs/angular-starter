@@ -22,6 +22,7 @@ import { AuthService } from './auth/auth.service';
 
 import { LocalStorageHelper } from '@app/helpers/local-storage.service';
 import { AuthGuardService } from './auth/auth-guard.service';
+import { Constants } from '@app/resources/constants';
 
 import { AppComponent } from './app.component';
 import { CallbackComponent } from './auth/callback/callback.component';
@@ -66,7 +67,8 @@ import { LoadingComponent } from './components/loading/loading.component';
     AuthService,
     UserService,
     LocalStorageHelper,
-    AuthGuardService
+    AuthGuardService,
+    Constants
   ],
   bootstrap: [AppComponent]
 })

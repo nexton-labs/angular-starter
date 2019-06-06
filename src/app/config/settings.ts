@@ -3,3 +3,5 @@ export const AUTH_CONFIG = {
   clientID: 'QzAh2Mq9QBaqvnRy7h7rVdCW9OBLol2s',
   callbackURL: 'http://localhost:4200/callback'
 };
+
+export const HOST = 'http://localhost:4200';
