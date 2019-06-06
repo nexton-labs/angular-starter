@@ -83,8 +83,12 @@ export class AuthService {
     this.idTokenValue = '';
     this.expiresAt = 0;
 
+    // Remove isLoggedIn flag from window.localStorage
+    window.localStorage.removeItem(IS_LOGGED_IN);
+    window.localStorage.removeItem(LOCAL_STORAGE_JWT);
+
     this.auth0.logout({
-      returnTo: window.location.origin
+      returnTo: 'http://localhost:4200'
     });
   }
 

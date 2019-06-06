@@ -14,12 +14,13 @@
       <button mat-button>
         <a routerLink="/settings">Settings</a>
       </button>
-      <button mat-stroked-button>
+      <button mat-stroked-button color="warn">
         <a routerLink="/configurations">configurations</a>
       </button>
       <div style="margin-left: auto; margin-right: 0">
         <img alt="Angular Logo" width="80" height="40" src="../assets/nextonlabs-logo.png">
-        <span>{{ title }}!</span>
+        <span>{{ title }}!</span>&nbsp;
+        <a mat-button (click)="handleLogout()">logout</a>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
