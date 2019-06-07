@@ -38,6 +38,8 @@ import { UserDetailComponent } from './components/users/user-detail/user-detail.
 import { UserListComponent } from './components/users/user-list/user-list.component';
 import { LoadingComponent } from './components/loading/loading.component';
 
+import { HeaderTitleDirective } from './directives/header-title.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +52,8 @@ import { LoadingComponent } from './components/loading/loading.component';
     UserComponent,
     UserListComponent,
     UserDetailComponent,
-    LoadingComponent
+    LoadingComponent,
+    HeaderTitleDirective
   ],
   imports: [
     BrowserModule,
