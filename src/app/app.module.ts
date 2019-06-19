@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+
 import { HttpClientModule } from '@angular/common/http';
 
 import { StoreModule } from '@ngrx/store';
@@ -14,11 +15,17 @@ import { CustomMaterialModule } from './modules/custom-material/custom-material.
 import { appReducers } from './store/reducers/app.reducers';
 import { UserEffects } from './store/effects/user.effects';
 
-import { environment } from './config/environment';
+import { environment } from '../environments/environment';
 
 import { UserService } from './services/user.service';
+import { AuthService } from './auth/auth.service';
+
+import { LocalStorageHelper } from '@app/helpers/local-storage.service';
+import { AuthGuardService } from './auth/auth-guard.service';
+import { Constants } from '@app/resources/constants';
 
 import { AppComponent } from './app.component';
+import { CallbackComponent } from './auth/callback/callback.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -29,10 +36,14 @@ import { UserComponent } from './containers/users/user/user.component';
 
 import { UserDetailComponent } from './components/users/user-detail/user-detail.component';
 import { UserListComponent } from './components/users/user-list/user-list.component';
+import { LoadingComponent } from './components/loading/loading.component';
+
+import { HeaderTitleDirective } from './directives/header-title.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CallbackComponent,
     SettingsComponent,
     ProfileComponent,
     DashboardComponent,
@@ -40,7 +51,9 @@ import { UserListComponent } from './components/users/user-list/user-list.compon
     UsersComponent,
     UserComponent,
     UserListComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    LoadingComponent,
+    HeaderTitleDirective
   ],
   imports: [
     BrowserModule,
@@ -53,7 +66,13 @@ import { UserListComponent } from './components/users/user-list/user-list.compon
     CustomMaterialModule,
     AppRoutingModule,
   ],
-  providers: [UserService],
+  providers: [
+    AuthService,
+    UserService,
+    LocalStorageHelper,
+    AuthGuardService,
+    Constants
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
